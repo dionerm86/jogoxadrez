@@ -1,0 +1,42 @@
+>>Comando para iniciar o repositório git
+$ git init
+
+>>Configurar usuário do repositório
+$ git config --global user.name "Dione Regis Maciel"
+$ git config --global user.name "dionerm86"gmail.com"
+
+>>Verificar status do projeto
+$ git status
+obs: os arquivos não rastreados ficarão vermelho.
+
+>> Adicionar os arquivos no git
+$ git add .
+obs: os arquivos ficarão verdes
+
+>>Commitar
+$ git commit --m "Inserir aki a descrição do commit"
+
+>> Verificar resumo do commit
+$ git log --oneline
+
+// Desfazer última alteração no código.
+git clean -df
+git checkout -- .
+//Desfazer último commit sem desfazer a última alteração
+git reset --soft HEAD~1
+//Desfaz o último commit e apaga a útilma alteração.
+git reset --hard HEAD~1
+
+//Navegar entre commits
+git log --oneline // Para verificar o código dos commits
+git checkout codcommit
+
+//Associar o repositório Git ao repositório do GitHub
+git remote add origin https://github.com/dionerm86/cursocsharp.git
+git remote add set -url https://github.com/dionerm86/cursocsharp.git //alterar o repositório a outro repositório remoto
+
+//Para subir as alterações para o GutHub
+git push
+
+
+
