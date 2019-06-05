@@ -10,5 +10,10 @@
             this.Linha = linha;
             this.Coluna = coluna;
         }
+
+        public override string ToString()
+        {
+            return Linha + ", " + Coluna;
+        }
     }
 }
