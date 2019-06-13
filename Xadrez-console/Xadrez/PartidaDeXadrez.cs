@@ -20,6 +20,7 @@ namespace Xadrez
             terminada = false;
             pecas = new HashSet<Peca>();
             pecas = new HashSet<Peca>();
+            capturadas = new HashSet<Peca>();
             inserirPeca();
         }
 
@@ -81,7 +82,13 @@ namespace Xadrez
         public HashSet<Peca> pecasCapturadas(Cor cor)
         {
             HashSet<Peca> aux = new HashSet<Peca>();
-            foreach(Peca x in capturadas)
+            
+            //if( aux.Count == 0)
+            //{
+            //    return aux;
+            //}
+
+            foreach (Peca x in capturadas)
             {
                 if (x.cor == cor)
                 {
